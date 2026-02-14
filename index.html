@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>БОЖХОНА ЮК ДЕКЛАРАЦИЯСИ</title>
+
+<style>
+:root{
+  --green:#009400;
+  --blue:#3050cd;
+  --border:#3050cd;
+  --text:#0d10a3;
+  --gold:#baa414;
+  --radius:5px;
+  --gap:8px;
+  --font:'Arial', sans-serif;
+}
+
+body{
+  margin:0;
+  font-family: var(--font);
+  background: url("https://ed1.customs.uz/PersonCabinet/template/print_decl/backprint.png") center/cover no-repeat #fff;
+  display:flex;
+  justify-content:center;
+  padding:12px 0;
+}
+
+.sheet{
+  width:360px;
+}
+
+.topbar{
+  background: var(--green);
+  padding:12px;
+  border-radius: var(--radius);
+  border:2px solid var(--border);
+  text-align:center;
+}
+
+.topbar img{
+  width:52px;
+  margin-bottom:6px;
+}
+
+.topbar .txt{
+  font-size:14px;
+  color:#fff;
+  font-weight:700;
+  line-height:1.2;
+}
+
+.title{
+  background: var(--green);
+  margin-top:8px;
+  padding:10px;
+  text-align:center;
+  color:#fff;
+  font-weight:700;
+  border-radius: var(--radius);
+  border:2px solid var(--border);
+  font-size:16px;
+}
+
+.row{ display:flex; margin-top:6px; gap:6px; }
+
+.cell-label, .cell-value{
+  padding:8px;
+  border:2px solid var(--border);
+  border-radius: var(--radius);
+  font-size:12px;
+  line-height:1.2;
+}
+
+.cell-label{
+  background: var(--blue);
+  color:#fff;
+  width:48%;
+  text-align:right;
+  font-weight:700;
+}
+
+.cell-value{
+  background:#fff;
+  color: var(--text);
+  width:52%;
+  font-weight:700;
+}
+
+.cell-gold{
+  color: var(--gold);
+}
+
+.table-wrap{
+  overflow:auto;
+  margin-top:8px;
+  border:2px solid var(--border);
+  border-radius: var(--radius);
+  background:#fff;
+}
+
+table{
+  border-collapse:collapse;
+  width:100%;
+  font-size:12px;
+  color:var(--text);
+}
+
+th,td{
+  border:1px solid var(--border);
+  padding:6px;
+  text-align:center;
+  background:#eef5ff;
+}
+
+.footer-btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  background: var(--green);
+  color:#fff;
+  margin-top:10px;
+  padding:10px;
+  border-radius: var(--radius);
+  border:2px solid var(--border);
+  text-decoration:none;
+  font-weight:700;
+  font-size:14px;
+}
+.footer-btn img{ width:22px; }
+</style>
+
+</head>
+<body>
+
+<div class="sheet">
+
+  <!-- HEADER -->
+  <div class="topbar">
+    <img src="https://ed1.customs.uz/PersonCabinet/main_img/Logo-tamozhni.png" alt="logo">
+    <div class="txt">ЎЗБЕКИСТОН РЕСПУБЛИКАСИ<br>ДАВЛАТ БОЖХОНА ҚЎМИТАСИ</div>
+  </div>
+
+  <div class="title">БОЖХОНА ЮК ДЕКЛАРАЦИЯСИ</div>
+
+  <!-- DATA ROWS -->
+  <div class="row">
+    <div class="cell-label">БЮДнинг рўйхат рақами:</div>
+    <div class="cell-value">27019/12.02.2026/0002248</div>
+  </div>
+
+  <div class="row">
+    <div class="cell-label">БЮД рўйхатга олинган вақт:</div>
+    <div class="cell-value">13.02.2026 13:13:32</div>
+  </div>
+
+  <div class="row">
+    <div class="cell-label">Расмийлаштирилган вақт:</div>
+    <div class="cell-value">13.02.2026 13:49:42</div>
+  </div>
+
+  <div class="row">
+    <div class="cell-label">Расмийлаштирув ҳолати:</div>
+    <div class="cell-value">Расмийлаштирилган</div>
+  </div>
+
+  <div class="row">
+    <div class="cell-label">БЮД йўлаги:</div>
+    <div class="cell-value cell-gold">Сариқ</div>
+  </div>
+
+  <div class="row">
+    <div class="cell-label">Божхона режими:</div>
+    <div class="cell-value">ИМ 40</div>
+  </div>
+
+  <div class="row">
+    <div class="cell-label">Юк жўнатувчи давлат:</div>
+    <div class="cell-value">156 - КИТАЙ</div>
+  </div>
+
+  <div class="row">
+    <div class="cell-label">Юк келиб тушадиган давлат:</div>
+    <div class="cell-value">860 - ЎЗБЕКИСТОН</div>
+  </div>
+
+  <div class="row">
+    <div class="cell-label">Чегарадаги божхона пости:</div>
+    <div class="cell-value">03002 - "Дустлик" ЧП</div>
+  </div>
+
+  <div class="row">
+    <div class="cell-label">Транспорт воситаси тури:</div>
+    <div class="cell-value">30 - Автомобиль транспорти</div>
+  </div>
+
+  <div class="row">
+    <div class="cell-label">Товар тўғрисидаги маълумотлар:</div>
+    <div class="cell-value">Товар сони: 1 та</div>
+  </div>
+
+  <!-- GOODS TABLE -->
+  <div class="table-wrap">
+    <table>
+      <tr>
+        <th>№</th>
+        <th>ТИФ ТН коди</th>
+        <th>Товар номи</th>
+        <th>Нетто оғирлиги</th>
+        <th>Брутто оғирлиги</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>8703800009</td>
+        <td>1. Новый легковой автомобиль с электрическим двигателем</td>
+        <td>2 750,000</td>
+        <td>2 750,000</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="row">
+    <div class="cell-label">Товарнинг умумий нетто оғирлиги:</div>
+    <div class="cell-value">2 750,000 кг.</div>
+  </div>
+
+  <div class="row">
+    <div class="cell-label">Товарнинг умумий брутто оғирлиги:</div>
+    <div class="cell-value">2 750,000 кг.</div>
+  </div>
+
+  <a class="footer-btn" href="https://ed1.customs.uz/PersonCabinet/download_print?decl_id=19c131b917f_1_ugtd">
+    <img src="https://ed1.customs.uz/PersonCabinet/template/print_decl/pdf_1850.png" alt="PDF">
+    Электрон БЮДни юклаб олиш
+  </a>
+
+</div>
+
+</body>
+</html>
